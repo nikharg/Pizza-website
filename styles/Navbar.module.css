@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+.mainContainer{
+    display: flex;
+    padding: 1rem 3rem 1rem 3rem;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(255, 179, 37);
+    height: 10vh;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+}
+.left{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+    gap: 20px;
+}
+.left .icon{
+    height: 55px;
+    width: 55px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.left .contact{
+    color: #fff;
+
+}
+.middle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.3rem;
+    flex: 2;
+    color: #fff;
+}
+.middle .logo{
+    font-family: 'Permanent Marker', sans-serif;
+    margin: 0 1rem;
+    font-size: 2rem;
+}
+.navList{
+    font-size: 1.2rem;
+}
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+}
+.right .cart{
+    position: relative;
+}
+.right .counter{
+    position: absolute;
+    top: -7px;
+    right: -8px;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    color: rgb(255, 179, 37);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.2rem;
+}
+.links{
+    text-decoration: inherit;
+    color: inherit;
+    font-family: inherit;
+}
+
+
+@media screen and (max-width: 768px) {
+    .left{
+        display: none;
+    }
+    .navList{
+        display: none;
+    }
+    .right{
+        position: absolute;
+        right: 2rem;
+    }
+    .cart{
+        height: 30px;
+        width: 30px;
+    }
+    .right .counter{
+        font-size: 0.8rem;
+    }
+}
